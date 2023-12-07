@@ -40,3 +40,13 @@ python3 main.py generate-image "A racoon taking a bath in the desert surrounded 
 ```
 python3 main.py generate-image "A lizzard enjoying a soft-drink on the table of sunny terrace at the coastline"
 ```
+
+## Chatbot
+To simplify the implementation of a chatbot, I make use of the [LangChain](https://python.langchain.com/docs/get_started/introduction) library
+Checkout [this documentation](https://python.langchain.com/docs/use_cases/chatbots) on how to implement a simple chatbot.
+
+If you want to use emojis, check out [this link](https://www.webfx.com/tools/emoji-cheat-sheet/).
+
+### Locally Running LLM
+This command interfaces with the Mistral LLM model that locally runs on my machine. I use [Ollama](https://ollama.ai/) to run large language models locally.
+For the installation of Ollama and how to run models locally using Ollama can be found [here](https://github.com/jmorganca/ollama)
