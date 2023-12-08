@@ -20,13 +20,13 @@ python3 main.py chatbot
 ### Prerequisites
 
 #### Ollama & Mistral
-This command interfaces with the Mistral LLM model that locally runs on my machine. I use [Ollama](https://ollama.ai/) to run large language models locally.
+This command interfaces with a locally downloaded Mistral LLM model. It runs locally on my machine. I use [Ollama](https://ollama.ai/) to download, run, and expose these large language models locally.
 For the installation of Ollama and how to run models locally using Ollama can be found [here](https://github.com/jmorganca/ollama)
 
 
 ### Implementation
 To simplify the implementation of a chatbot, I make use of the [LangChain](https://python.langchain.com/docs/get_started/introduction) library
-Checkout [this documentation](https://python.langchain.com/docs/use_cases/chatbots) on how to implement a simple chatbot.
+Check out [this documentation](https://python.langchain.com/docs/use_cases/chatbots) on how to implement a simple chatbot.
 
 If you want to use emojis, check out [this link](https://www.webfx.com/tools/emoji-cheat-sheet/).
 
