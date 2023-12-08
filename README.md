@@ -37,7 +37,7 @@ If you want to use emojis, check out [this link](https://www.webfx.com/tools/emo
 
 ## Generating Images
 
-The command:
+The command
 
 ```
 python3 main.py generate-image [PROMPT]
@@ -57,14 +57,11 @@ python3 main.py generate-image "A lizzard enjoying a soft-drink on the table of 
 The pre-trained model that is used to generate the images is [stabilityai/sdxl-turbo](https://huggingface.co/stabilityai/sdxl-turbo)
 
 ### Prerequisites
+The example has support for:
+- NVIDIA [CUDA](https://en.wikipedia.org/wiki/CUDA) GPUs. 
+- Macs running with an Apple M1 chip like my machine. For these machines, PyTorch needs to be configured with the [MPS backend](https://pytorch.org/docs/stable/notes/mps.html).
 
-Because I am running this on a Macbook with an Apple M1 chip, I've had to configure PyTorch for using the [MPS backend](https://pytorch.org/docs/stable/notes/mps.html) instead of [CUDA](https://en.wikipedia.org/wiki/CUDA). Cuda can only be used if your machine is running a NVIDIA GPU.  
 
-Use the following command to generate images:
-
-```
-python3 main.py generate-image [PROMPT]
-```
 
 
 
