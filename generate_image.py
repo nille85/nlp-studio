@@ -18,9 +18,18 @@ def create_images_dir(folder_name : str):
         os.makedirs(folder_name)
 
 def load_model():
-    device = "mps" if torch.backends.mps.is_available() else "cpu"
+    device = get_device()
     pipe = AutoPipelineForText2Image.from_pretrained("stabilityai/sdxl-turbo", torch_dtype=torch.float16, variant="fp16").to(device)
     return pipe
+
+def get_device():
+    if torch.cuda.is_available():
+        return "cuda"
+    elif torch.backends.mps.is_available():
+        return "mps"
+    else:
+        return "cpu"
+
 
 def generate_file_name(folder_name : str):
     timestamp = int(time.time())

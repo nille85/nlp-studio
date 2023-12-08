@@ -7,9 +7,6 @@ from chatbot import ChatBotFactory
 
 
 
-
-
-
 app = typer.Typer()
 console = Console()
 
@@ -29,9 +26,6 @@ def chat():
         else:
             break
 
-
-        
- 
 
 if __name__ == "__main__":
     app()

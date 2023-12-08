@@ -33,7 +33,17 @@ If you want to use emojis, check out [this link](https://www.webfx.com/tools/emo
 - It's also easy to connect to OpenAI GPT models running in the cloud instead. This will require an OpenAI API key and it will not come for free.
 
 ## Generating Images
-[SDXL Turbo information on HuggingFace](https://huggingface.co/stabilityai/sdxl-turbo)
+
+The command:
+
+```
+python3 main.py generate-image [PROMPT]
+```
+
+### Model
+The pre-trained model that is used to generate the images is [stabilityai/sdxl-turbo](https://huggingface.co/stabilityai/sdxl-turbo)
+
+### Prerequisites
 
 Because I am running this on a Macbook with an Apple M1 chip, I've had to configure PyTorch for using the [MPS backend](https://pytorch.org/docs/stable/notes/mps.html) instead of [CUDA](https://en.wikipedia.org/wiki/CUDA). Cuda can only be used if your machine is running a NVIDIA GPU.  
 
